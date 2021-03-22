@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.logobox {
+    text-align: center;
+    font-size: 7em;
+    margin: 20px 0 20px 0;
+}
+
+.logo {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 1.5s;
+}
+
+.logo {
+    color: #f8a62a;
+    font-family: 'BeonRegular';
+    font-weight: normal;
+    font-style: italic;
+}
+
+.logobox .logo:hover {
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+    -moz-animation: glow 1.5s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.logobox .logo:hover {
+    color: #ffffff;
+}
+
+@keyframes glow {
+    from {
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px #FF9900,
+            0 0 70px #FF9900,
+            0 0 80px #FF9900,
+            0 0 100px #FF9900,
+            0 0 150px #FF9900;
+    }
+
+    to {
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #fff,
+            0 0 20px #FF9900,
+            0 0 35px #FF9900,
+            0 0 40px #FF9900,
+            0 0 50px #FF9900,
+            0 0 75px #FF9900;
+    }
+}
+
+
+/*--------------------RESPONSIVE--------------------*/
+
+@media (max-width: 650px) {
+    #container {
+        width: 100%;
+    }
+
+    p {
+        font-size: 3.5em;
+    }
+}
